@@ -5,8 +5,8 @@ export const birthdayConfig = {
   boyfriendName: "Abhi",
 
   // Custom Tagline & Main Titles
-  tagline: "Happy Birthday, Ponnu ❤️",
-  subTagline: "A little birthday surprise from Abhi, made just for you.",
+  tagline: "Happy 20th Birthday, Ponnu ❤️",
+  subTagline: "A little birthday surprise from Abhi, made just for you on your 20th year.",
 
   // Background Music
   backgroundMusic: "assets/music/love-me-not.mp3",
@@ -17,12 +17,13 @@ export const birthdayConfig = {
   // Birthday Details
   birthdayDate: "18 September 2007",
   birthYear: "2007",
+  ageLabel: "20 years old",
 
   // Handwritten Love Letter Content
   loveLetter: {
     greeting: "Dear Sruthi,",
     bodyParagraphs: [
-      "Happy Birthday, my Ponnu. Today I want to remind you of how deeply you are loved, not just on your birthday, but every single day of my life. You are the person who makes my world softer, brighter, and more beautiful just by being in it.",
+      "Happy 20th birthday, my Ponnu. Today I want to remind you of how deeply you are loved, not just on your birthday, but every single day of my life. You are the person who makes my world softer, brighter, and more beautiful just by being in it.",
       "There are so many little things about you that I adore — your smile, your warmth, the way you make everything feel lighter, and the way your presence turns ordinary moments into memories I never want to forget. You have become such a special part of my heart.",
       "With you, life feels calmer and kinder. With you, even the smallest moments start to feel magical. I love the way you make me feel seen, safe, and happy in ways I can’t explain with words alone. You are my comfort, my peace, and my favorite person.",
       "So today, on your birthday, I want you to know this clearly: I am so lucky to love you, to know you, and to be part of your life. I hope this year brings you all the joy, all the love, and all the beautiful things you deserve, because you deserve every good thing in the world."
@@ -112,6 +113,6 @@ export const birthdayConfig = {
   // Secret Easter Egg Message
   easterEgg: {
     title: "Okay... you found my secret! 😌❤️",
-    message: "Come here, Sruthi. You owe me a big hug right now, Ponnu!"
+    message: "Come here, Sruthi. You owe me a big hug right now, Ponnu — happy 20th birthday!"
   }
 };

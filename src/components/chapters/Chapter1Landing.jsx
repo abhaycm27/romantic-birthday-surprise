@@ -66,11 +66,11 @@ export default function Chapter1Landing({ onStart }) {
             </div>
 
             <h1 className="font-script text-gradient text-glow" style={{ fontSize: '3.8rem', marginBottom: '1rem', lineHeight: 1.2 }}>
-              Hey Ponnu... this is our story. ❤️
+              Hey Ponnu... 20 looks beautiful on you. ❤️
             </h1>
 
             <p style={{ fontSize: '1.25rem', color: '#F8E7EF', marginBottom: '2.5rem', fontWeight: 500, textShadow: '0 6px 18px rgba(0,0,0,0.5)' }}>
-              Abhi wrote a little love story for you, with every scene made from our memories.
+              Abhi wrote a little love story for you, celebrating your 20th year and every memory we’ve made.
             </p>
 
             <button
