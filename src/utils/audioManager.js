@@ -100,7 +100,7 @@ class AudioManager {
       this.bgMusicAudio.autoplay = true;
       this.bgMusicAudio.preload = 'auto';
       this.bgMusicAudio.volume = this.volume;
-      this.bgMusicAudio.muted = true;
+      this.bgMusicAudio.muted = this.isMuted;
     }
 
     if (this.bgMusicAudio && !this.isPlayingMusic) {
@@ -121,22 +121,28 @@ class AudioManager {
         });
       };
 
+      const playMutedFallback = () => {
+        audio.muted = true;
+        audio.play().then(() => {
+          this.isPlayingMusic = true;
+        }).catch(() => {
+          this.isPlayingMusic = false;
+        });
+      };
+
       this.autoplayInteractionHandler = playWithSound;
       window.addEventListener('pointerdown', playWithSound, { once: true });
       window.addEventListener('keydown', playWithSound, { once: true });
 
       const tryPlay = () => {
+        audio.muted = this.isMuted;
         audio.play().then(() => {
           this.isPlayingMusic = true;
-          if (!this.isMuted) {
-            setTimeout(() => {
-              if (!audio.paused && !this.isMuted) {
-                playWithSound();
-              }
-            }, 200);
-          }
         }).catch(err => {
           console.log('Audio autoplay prevented by browser. Will play on interaction.', err);
+          if (!this.isMuted) {
+            playMutedFallback();
+          }
         });
       };
 
